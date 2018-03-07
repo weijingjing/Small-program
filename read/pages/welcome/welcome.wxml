@@ -1,0 +1,9 @@
+<!-- wxml是编写小程序骨架的文件 -->
+<!--div容器组件类似view  -->
+<view class='container'>
+<image class='user-avater' src='/images/star.png'></image>
+      <text class='user-name'>hello，weijingjing</text>
+      <view class='moto-container' bindtap="onContainerTap">
+         <text class='moto' bindtap='onSubTap'>开启小程序之旅</text>
+      </view>
+</view>

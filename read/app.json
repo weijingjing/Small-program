@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+        "pages/posts/posts",
+        "pages/post-detail/post-detail"
+  ],
+"window":{
+  "navigationBarBackgroundColor":"#be2222"
+}
+}

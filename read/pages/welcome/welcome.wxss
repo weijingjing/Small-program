@@ -1,0 +1,38 @@
+page {
+    background-color: #be2222;
+    /* background-image: url(http://seopic.699pic.com/photo/50056/2032.jpg_wh1200.jpg); */
+    height:100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.user-avater {
+  width:200rpx;
+  height:200rpx;
+  margin-top:160rpx;
+}
+
+.user-name {
+  margin-top:100rpx;
+  font-size:32rpx;
+  font-weight:bold;
+}
+
+.moto-container {
+  margin-top: 200rpx;
+  border:2px solid #309545;
+  height:60rpx;
+  width:200rpx;
+  border-radius:5px;
+  text-align:center;
+}
+
+.moto {
+  font-size: 26rpx;
+  font-weight:bolder;
+  color:#309545;
+}

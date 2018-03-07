@@ -1,0 +1,59 @@
+<import src="./post-item/post-item-template.wxml" />
+<!--轮播图  -->
+<view>
+  <swiper vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='/images/wx.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/vr.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/iqiyi.png'></image>
+    </swiper-item>
+  </swiper>
+
+
+
+  <!--新闻列表  -->
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+    <!-- <template> 模板-->
+    <view catctap="onPostTap" data-postid="{{item.postId}}" data-post-name="name">
+    <template is="postItem" data="{{item}}" />
+    </view>
+  </block>
+
+
+
+  <!--页面内容  -->
+  <view class='post-container'>
+    <view class='post-author-data'>
+      <image class="post-author" src='/images/avatar/2.png'></image>
+      <text class="post-data">Nov 25 2018</text>
+    </view>
+    <text class="post-title">路线A：首里城参观+国际通体验(冲绳万人拔河大绳+壶屋+牧志公设市场)+亲民买买买 </text>
+    <image class='post-image' src='/images/post/bl.png'></image>
+    <text class='post-content'>首里城：位于冲绳岛那霸市，曾是琉球国的都城和王宫所在地，就像你在自己的营养俱乐部一样，当时琉球国王处理国家事务、接见使节和举行重要庆典都在这里，现已被联合国教科文组织列为世界文化遗产（你跟康宝莱一起去过多少世界文化遗产啦？）</text>
+    <view class='post-like'>
+      <image class='post-like-image' src='/images/icon/chat.png'></image>
+      <text class='post-like-font'>92</text>
+      <image class='post-like-image' src='/images/icon/view.png'></image>
+      <text class='post-like-font'>65</text>
+    </view>
+  </view>
+  <view class='post-container'>
+    <view class='post-author-data'>
+      <image class="post-author" src='/images/avatar/3.png'></image>
+      <text class="post-data">{{date}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image class='post-image' src='/images/post/cat.png'></image>
+    <text class='post-content'>首里城：位于冲绳岛那霸市，曾是琉球国的都城和王宫所在地，就像你在自己的营养俱乐部一样，当时琉球国王处理国家事务、接见使节和举行重要庆典都在这里，现已被联合国教科文组织列为世界文化遗产（你跟康宝莱一起去过多少世界文化遗产啦？）</text>
+    <view class='post-like'>
+      <image class='post-like-image' src='/images/icon/chat.png'></image>
+      <text class='post-like-font'>92</text>
+      <image class='post-like-image' src='/images/icon/view.png'></image>
+      <text class='post-like-font'>65</text>
+    </view>
+  </view>
+</view>
